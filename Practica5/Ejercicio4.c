@@ -53,7 +53,12 @@ int Multiplo(int k,int i){
 }
 
 int Potencia(int k, int i){
-    int d;
-    d = pow(k, i);
-    return d;
+    int j = 1;
+    int f;
+    while (j <= i)
+    {
+        f = f * k;
+        j++;
+    }
+    return f;
 }
