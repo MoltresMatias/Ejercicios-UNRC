@@ -33,13 +33,12 @@ int main(){
     }else if((promedio >=5) && (promedio < 7)){
         strcpy(mensaje, "Regular");
     }else{
-        strcpy(mensaje, "Promocion");
+        strcpy(mensaje, "Promocion  ");
     }
     printf("Tu nota es: %d, %s", promedio, mensaje);
 
     return 0;
 }
-
 int NotaFinal(int not1,int not2,int not3){
     int prom;
     if ((not1 < 4) || (not2 < 4) || (not3 < 4)){
