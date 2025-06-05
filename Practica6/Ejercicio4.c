@@ -47,7 +47,7 @@ void Calcular(float a, float b, char c, float *e){
 void Mostrar(float e){
     
     if (e == 999999999){
-        printf("ERROR 999999999");
+        printf("!ERROR FATAL! Division por cero no permitida.");
     }else{
         printf("El resultado es: %f", e);
     }
