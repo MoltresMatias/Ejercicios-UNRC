@@ -6,6 +6,7 @@ typedef struct
     int cant;
 }Tdata;
 
+
 Tdata misNotas;
 float promedio;
 
@@ -23,9 +24,18 @@ void cargarNotas(Tdata *notas){
     int i;
     printf("Ingrese la cantidad de notas a cargar: \n");
     scanf("%d", &notas->cant);
-    for (i = 1; i <= notas->cant; i++){
+    
+    for (i = 1; i <= notas->cant; i++)
+    {
         printf("Ingrese la nota: \n");
         scanf("%d", &notas->a[i]);
+
+        while ((notas->a[i] <= 0)||(notas->a[i] > 10))// agrego esto para poder validar que la nota ingresada sea correcta, se que no se pide en el ejercicio;
+        {
+            printf("-ingrese una nota valida-\n");
+            printf("Ingrese la nota: \n");
+            scanf("%d", &notas->a[i]);
+        }
     }
 }
 
