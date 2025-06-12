@@ -1,5 +1,6 @@
 #include <stdio.h>
 #define max 200 
+
 typedef struct 
 {
     int a[max];
