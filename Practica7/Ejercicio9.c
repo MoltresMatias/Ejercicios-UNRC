@@ -9,6 +9,7 @@ typedef struct
 Tdata pab;
 int palabra;
 int Comprobar(Tdata a);
+
 int main(){
     palabra = Comprobar(pab);
 
